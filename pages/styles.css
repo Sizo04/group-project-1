@@ -2,3 +2,34 @@
   font-family: 'Roboto';
   src: url(./fonts/Roboto-Black.ttf);
 }
+
+*{
+  margin: 0;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  padding:7px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.navbar h1{
+  font-size: 24px;
+  font-weight: bold;
+  color:#F9FAF8;
+
+}
+
+.navbar a{
+  color:#F9FAF8;
+  font-size:18px;
+  padding-left: 7px;
+  text-decoration:none;
+}
+
+/* NAVBAR */
