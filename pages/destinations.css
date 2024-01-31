@@ -111,7 +111,7 @@
 
 /* AFRICA SECTION */
 
-.dest_africa {
+.gray-bkg {
   background-color: rgb(236, 236, 249);
 }
 
@@ -123,7 +123,7 @@
   align-items: center;
 }
 
-.dest_africa figure {
+.dest_continent figure {
   width: 200px;
   height: 180px;
 
@@ -133,14 +133,14 @@
   /* outline: 1px solid black; */
 }
 
-.dest_africa figcaption {
+.dest_continent figcaption {
   margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 120px;
   text-align: center;
 }
 
-.dest_africa img {
+.dest_continent img {
   width: 150px;
   height: 130px;
   border-radius: 10%;
