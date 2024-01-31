@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Roboto";
-  src: url("./fonts/Roboto-Black.ttf");
+  src: url("./fonts/Roboto-Black.ttf") format("truetype");
 }
 
 :root {
@@ -41,5 +41,49 @@
   padding-left: 7px;
   text-decoration: none;
 }
-
-/* NAVBAR */
+/* Activities */
+.activities-page {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+.searchbar-container {
+  width: 100vw;
+  height: auto;
+  padding: 30px 0 30px 0;
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar-container .header-text {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+.searchbar-container input {
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.image-index-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1.5em 0;
+}
+.image-index-container .img-menu {
+  height: auto;
+  width: 12vw;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+  margin: 0 1.5vw;
+  filter: brightness(50%);
+}
+.image-index-container .img-menu:hover {
+  filter: brightness(100%);
+}
+.advanture-container {
+  height: 250px;
+  background-color: #e5e7eb;
+}
