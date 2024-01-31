@@ -100,11 +100,13 @@
 }
 .activity-section h2 {
   font-family: "section-header";
+  flex: 1;
 }
 .activity-section article {
   font-size: 0.9em;
   display: flex;
   flex-direction: column;
+  flex: 3;
 }
 .sub-section {
   width: 60em;
@@ -119,7 +121,7 @@
   margin-right: 15px;
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .activity-section {
     flex-direction: column;
     padding: 10px 10px;
@@ -140,4 +142,4 @@
     margin: 0;
     padding: 10px;
   }
-}
+} */
