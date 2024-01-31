@@ -33,6 +33,12 @@
   text-decoration: none;
 }
 
+.navbar button {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
 /* NAVBAR */
 
 /*HERO */
@@ -76,7 +82,7 @@
   font-weight: bold;
 }
 
-.hero figure {}
+
 
 .hero figure img {
   max-width: 600px;
@@ -200,6 +206,20 @@ footer {
 }
 
 @media only screen and (max-width: 920px) {
+
+  .navbar {
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  .navbar button {
+    display: block;
+  }
+
   .hero aside {
     text-align: center;
   }
