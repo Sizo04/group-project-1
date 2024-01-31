@@ -7,7 +7,7 @@
   margin: 0;
 }
 
-/* NAVBAR */
+/* NAVBAR and FOOTER */
 
 .navbar, footer{
   display: flex;
@@ -36,4 +36,4 @@ footer{
   color:#F9FAF8;
   font-size: 12px;
 }
-/* NAVBAR */
+/* NAVBAR and FOOTER */
