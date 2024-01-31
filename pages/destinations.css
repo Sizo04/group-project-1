@@ -1,6 +1,6 @@
-:root{
+:root {
   --section_width: 100vw;
-  --section_height: 300px;
+  --section_height: 250px;
 }
 
 @font-face {
@@ -65,8 +65,14 @@
 
 .main_top_img {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 50px 20px;
+  margin: 70px 20px;
+}
+@media (max-width: 500px) {
+  .main_top_img {
+    justify-content: center;
+  }
 }
 
 .main_top_img img {
@@ -103,6 +109,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
 }
 
 .main_top_img figcaption {
@@ -122,8 +129,9 @@
 
 .dest_img_wrapper {
   width: var(--section_width);
-  height: var(--section_height);
+  min-height: var(--section_height);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -131,7 +139,6 @@
 .dest_continent figure {
   width: 200px;
   height: 180px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,25 +159,52 @@
   box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* CALL BOX */
+
+.dest_call {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.call_box {
+  width: 80vw;
+  min-height: var(--section_height);
+  background: cornflowerblue;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #e5e7eb;
+  border-radius: 5px;
+}
+
+.call_box h3 {
+  margin-bottom: 40px;
+}
+
+.call_box button {
+  align-self: center;
+}
 /* TESTIMONIALS */
 
-.dest_testimonials{
+.dest_testimonials {
   width: var(--section_width);
   height: var(--section_height);
   background: black;
 }
 
-.dest_testimonials h2{
+.dest_testimonials h2 {
   text-align: center;
-  color:#e5e7eb;
+  color: #e5e7eb;
 }
 
-.testi_wrapper{
+.testi_wrapper {
   display: flex;
   justify-content: space-around;
 }
 
-.testi_box{
+.testi_box {
   width: 210px;
   height: 180px;
   background: grey;
@@ -178,5 +212,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top:20px;
+  margin-top: 20px;
 }
