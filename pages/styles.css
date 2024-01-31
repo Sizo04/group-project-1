@@ -9,7 +9,7 @@
 
 /* NAVBAR */
 
-.navbar{
+.navbar, footer{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -32,4 +32,8 @@
   text-decoration:none;
 }
 
+footer{
+  color:#F9FAF8;
+  font-size: 12px;
+}
 /* NAVBAR */

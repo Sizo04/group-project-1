@@ -8,37 +8,6 @@
   src: url("./fonts/Roboto-Black.ttf");
 }
 
-* {
-  margin: 0;
-}
-
-/* NAVBAR */
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
-  background-color: #1f2937;
-  color: #e5e7eb;
-}
-
-.navbar h1 {
-  align-self: flex-start;
-  font-size: 24px;
-  font-weight: bold;
-  color: #f9faf8;
-}
-
-.navbar a {
-  color: #f9faf8;
-  font-size: 18px;
-  /* padding-left: 7px; */
-  text-decoration: none;
-}
-
-/* NAVBAR */
-
 /* MAIN */
 
 .dest_main img {
