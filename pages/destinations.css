@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Black.ttf");
+}
+
+* {
+  margin: 0;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+.navbar h1 {
+  align-self: flex-start;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+.navbar a {
+  color: #f9faf8;
+  font-size: 18px;
+  /* padding-left: 7px; */
+  text-decoration: none;
+}
+
+/* NAVBAR */
+
+/* MAIN */
+
+.dest_main img {
+  width: 100vw;
+  height: 400px;
+  margin-top: 5vh;
+  object-fit: cover;
+}
+
+.dest_main p {
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  max-width: 700px;
+  color: #e5e7eb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 4em;
+}
+
+/* MAIN */
+
+/* TOP IMAGES */
+
+.main_top_img {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 20px;
+}
+
+.main_top_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 180px;
+  border-radius: 10%;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.dest_boxes {
+  transform: scale(1);
+  transition: 1s ease-in-out;
+}
+
+.dest_boxes:hover {
+  transform: scale(1.1);
+  letter-spacing: 1px;
+  transition: letter-spacing 0.5s;
+  transition: transform 1s;
+}
+
+.dest_boxes a {
+  text-decoration: none;
+}
+
+.main_top_img figure {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_top_img figcaption {
+  color: #e5e7eb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  position: relative;
+  z-index: 3;
+}
+
+/* AFRICA SECTION */
+
+.dest_africa {
+  background-color: rgb(236, 236, 249);
+}
+
+.dest_img_wrapper {
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dest_africa figure {
+  width: 200px;
+  height: 180px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* outline: 1px solid black; */
+}
+
+.dest_africa figcaption {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 120px;
+  text-align: center;
+}
+
+.dest_africa img {
+  width: 150px;
+  height: 130px;
+  border-radius: 10%;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+}
