@@ -84,6 +84,18 @@ figcaption {
   width: 100%;
   text-align: justify;
 }
+.activity-links-footer {
+  text-align: center;
+}
+.activity-links-footer a {
+  margin: 0 5px;
+  font-size: 1em;
+  color: #f9faf8;
+  text-decoration: none;
+}
+.activity-links-footer a:hover {
+  font-weight: bold;
+}
 
 @media screen and (max-width: 600px) {
   .header-container {
