@@ -61,16 +61,17 @@ html{
 
 /* DESTINATIONS */
 
-.dest_boxes {
+.dest_titles {
+ text-transform: uppercase;
+ margin-left:5px;
+}
+
+.dest_boxes{
   transform: scale(1);
   transition: 1s ease-in-out;
 }
 
-.dest_titles {
- text-transform: uppercase;
-}
-
-.dest_boxes:hover {
+.dest_boxes:hover, .dest_img_wrapper figure:hover {
   transform: scale(1.1);
   letter-spacing: 1px;
   transition: letter-spacing 0.5s;
