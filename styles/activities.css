@@ -1,0 +1,121 @@
+:root {
+  --dark-background-color: #1f2937;
+  --main-text-color: #f9faf8;
+  --secondary-text-color: #e5e7eb;
+  --header-logo-text-color: #f9faf8;
+  --button-color: #3882f6;
+  --header-text-color: #1f2937;
+  --quote-background-color: #e5e7eb;
+  --quote-text-color: #1f2937;
+}
+
+figcaption {
+  font-size: smaller;
+  color: gray;
+}
+.activities-page {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.header-container {
+  width: 100vw;
+  height: 200px;
+  margin: 0;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container h1 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.image-index-container {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px 0;
+}
+.image-index-container .img-menu {
+  height: auto;
+  width: 12vw;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+  margin: 0 1.5vw;
+  filter: brightness(50%);
+}
+.image-index-container .img-menu:hover {
+  filter: brightness(100%);
+}
+
+.activity-section {
+  width: 100vw;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row;
+}
+.activity-gray-bg {
+  background-color: #e5e7eb;
+}
+
+.intro-container {
+  width: 25%;
+  padding-left: 10px;
+}
+.intro-container p {
+  width: 100%;
+  text-align: justify;
+}
+.ins-container {
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  row-gap: 15px;
+}
+.ins-container .activity-card {
+  width: 20vw;
+}
+.activity-card .act-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.activity-card p {
+  width: 100%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    height: 150px;
+  }
+  .header-container h1 {
+    font-size: 1.2em;
+  }
+  .image-index-container .img-menu {
+    filter: brightness(100%);
+    border: 1px solid #3882f6;
+  }
+  .activity-section {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+  .ins-container {
+    flex-direction: column;
+  }
+  .intro-container,
+  .ins-container {
+    width: 90vw;
+  }
+  .ins-container .activity-card {
+    width: 100%;
+  }
+}
