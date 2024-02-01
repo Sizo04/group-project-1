@@ -193,11 +193,13 @@ html {
   width: var(--section_width);
   min-height: var(--section_height);
   background: black;
+  margin-bottom: 40px;
 }
 
 .dest_testimonials h2 {
   text-align: center;
   color: #e5e7eb;
+  padding-top: 10px;
 }
 
 .testi_wrapper {
