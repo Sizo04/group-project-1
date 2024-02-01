@@ -5,6 +5,25 @@
 
 *{
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* TEXTS */
+
+h1, h2, p {
+  margin: 0.5em 0em 0.5em 0em;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
 }
 
 /* NAVBAR and FOOTER */
@@ -33,8 +52,478 @@
   text-decoration:none;
 }
 
-footer{
-  color:#F9FAF8;
-  font-size: 12px;
+/* ABOUT US PAGE */
+
+/* HR */
+
+hr {
+  width: 2.5em;
+  margin-left: 0;
 }
-/* NAVBAR and FOOTER */
+
+/* BUTTONS */
+
+button {
+  font-size: 18px;
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.primary-btn {
+  background-color: #3882F6;
+  color: #E5E7EB;
+}
+
+.primary-btn:hover {
+  transition: color 0.2s ease-in-out;
+  background-color: #1F2937;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #F9FAF8;
+  border: 1.5px #F9FAF8 solid;
+}
+
+.secondary-btn:hover {
+  transition: color 0.2s ease-in-out;
+  background-color: #F9FAF8;
+  color: #1F2937;
+}
+
+header {
+  height: 10vh;
+  background-color: #1F2937;
+}
+
+/* INPUT */
+
+input[type="text"] {
+  background-color: #F9FAF8;
+  color: #1F2937;
+  border: none;
+  border-radius: 0.5em;
+  padding: 10px;
+}
+
+/* RESPONSIVE */
+
+.mobile {
+  display: none;
+}
+
+/* ABOUT US HERO */
+
+.about-us-hero {
+  height: 50vh;
+  background-color: #1F2937;
+  display: flex;
+  padding: 0 2em 0 2em;
+}
+
+.about-us-image-container, .about-us-text-container{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-hero hr {
+  color: #F9FAF8;
+  opacity: 0.85;
+}
+
+.hero-image {
+  width: 40vh;
+  height: auto;
+}
+
+
+/* TODO: create a common text-box for about-us and team sections */
+.about-us-text{
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #F9FAF8;  
+}
+
+/* ABOUT US MISSION & VALUES SECTION */
+
+.about-us-values {
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 2em;
+}
+
+.about-us-card {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.circle-icon {
+  width: 5em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #1F2937;
+}
+
+.circle-icon img {
+  width: 3em;
+  height: auto;
+}
+
+/* IMAGEBOX SECTION */
+
+.about-us-imagebox {
+  position: relative;
+  height: 40vh;
+  background-image: url("../images/about-us/landscape.jpg");
+  background-size: cover;
+
+  background-repeat: repeat-x;
+
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.about-us-imagebox-hoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(31, 41, 55, 0.6);
+  display: flex;
+}
+
+.about-us-imagebox-text {
+  margin: 4em;
+  width: 30vw;
+  color: #F9FAF8;
+}
+
+/* TEAM SECTION */
+
+.about-us-team {
+  /* height: 40vh; */
+  background-color: #E5E7EB;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2em 0 2em;
+  color: #1F2937;
+  padding: 3em 2em;
+}
+
+.about-us-team-info-container {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-team-info {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about-us-team-info hr {
+  color: #1F2937;
+}
+
+.about-us-team-members {
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-member {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.member {
+  width: 13vw;
+  height: 13vw;
+  background-color: #1F2937;
+}
+
+.team-member  h2 {
+  font-size: 16px;
+}
+
+.team-member  p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* SERVICES */
+
+.about-us-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 3em 2em;
+}
+
+.about-us-services-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.service {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.service img {
+  width: 7em;
+  height: auto;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #1F2937;
+  color: #F9FAF8;
+  padding: 3em 2em 1em 2em;
+  gap: 3em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 20px;
+  color: #F9FAF8;
+}
+
+.footer-info-container {
+  display: flex;
+  gap: 5em;
+}
+
+.footer-info {
+  flex: 2;
+  text-align: center;
+}
+
+.newsletter, .footer-contacts, .social {
+  flex: 1;
+}
+
+.newsletter-btn {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.newsletter-btn button {
+  margin-top: 0;
+}
+
+.social ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1em;
+  padding: 0;
+}
+
+.social li {
+  display: flex;
+  align-items: center;
+  margin: 2px 0;
+  gap: 5px;
+}
+
+.social img {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.social img:hover{
+  opacity: 0.75;
+}
+
+.footer-contacts ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 10px;
+}
+
+
+/*  Smartphones  */
+@media (max-width: 768px) {
+
+  hr {
+      display: none;
+  }
+
+  .mobile {
+      display: block;
+      width: 100%;
+  }
+
+  /* Hero Section */
+  
+  .about-us-hero {
+    height: 75vh;
+    flex-direction: column;
+  }
+
+  .about-us-image-container,
+  .about-us-text-container {
+    width: 100%;
+  }
+
+  .about-us-text {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+  }
+
+  /* Mission & Values Section */
+
+  .about-us-values {
+      flex-direction: column;
+      gap: 3em;
+  }
+
+  .about-us-card {
+      width: 100%;
+  }
+
+  /* ImageBox Section */
+
+  .about-us-imagebox-text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 2em 1em;
+  }
+
+  /* Team Section */
+
+  .about-us-team {
+      flex-direction: column;
+      gap: 3em;
+  }
+
+  .about-us-team-info-container {
+      width: 100%;
+  }
+
+  .about-us-team-info {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+  }
+
+  .about-us-team {
+      height: auto;
+      flex-direction: column;
+      padding: 2em;
+  }
+
+  .about-us-team-members {
+      width: auto;
+      flex-wrap: wrap;
+      gap: 1em;
+  }
+
+  .member {
+      width: 10em;
+      height: 10em;
+  } 
+
+  /* .about-us-team-info {
+      width: auto;
+  }*/
+
+  /* SERVICES */
+
+  .about-us-services-container {
+      flex-wrap: wrap;
+      gap: 5em;
+  }
+
+  .service {
+      width: auto;
+  }
+
+  /* FOOTER */
+
+  footer {
+      gap: 3em;
+  }
+  
+  .footer-info-container {
+      flex-direction: column;
+      gap: 2em;
+  }
+
+  .footer-info, .newsletter, .footer-contacts, .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .social ul {
+      justify-content: center;
+  }
+
+  .newsletter-btn {
+      justify-content: center;
+  }
+
+  footer ul {
+      padding: 0;
+  }
+
+  footer li {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+  }
+}
