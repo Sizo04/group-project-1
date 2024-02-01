@@ -3,7 +3,7 @@
   --section_height: 250px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -62,16 +62,17 @@ html{
 /* DESTINATIONS */
 
 .dest_titles {
- text-transform: uppercase;
- margin-left:5px;
+  text-transform: uppercase;
+  margin-left: 5px;
 }
 
-.dest_boxes{
+.dest_boxes {
   transform: scale(1);
   transition: 1s ease-in-out;
 }
 
-.dest_boxes:hover, .dest_img_wrapper figure:hover {
+.dest_boxes:hover,
+.dest_img_wrapper figure:hover {
   transform: scale(1.1);
   letter-spacing: 1px;
   transition: letter-spacing 0.5s;
@@ -161,23 +162,23 @@ html{
 
 .call_box h3 {
   margin-bottom: 40px;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5em;
 }
 
 .call_box p {
-  font-size:1.2em;
+  font-size: 1.2em;
   max-width: 250px;
   line-height: 2em;
 }
 
 .call_box button {
-  align-self:center;
+  align-self: center;
   padding: 12px 30px 12px 30px;
-  border:3px #e5e7eb solid;
+  border: 3px #e5e7eb solid;
   border-radius: 10px;
   background: transparent;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: #e5e7eb;
 }
@@ -204,7 +205,7 @@ html{
   width: 200px;
   height: 160px;
   background: rgb(224, 220, 220);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,57 +213,22 @@ html{
   margin-top: 20px;
 }
 
-.testi_name{
-  color:cornflowerblue;
+.testi_name {
+  color: cornflowerblue;
   font-weight: bold;
   margin-bottom: 2px;
 }
 
-.testi_dest{
-  color:grey;
+.testi_dest {
+  color: grey;
   font-style: italic;
   margin-bottom: 2px;
 }
 
-.testi_box blockquote{
+.testi_box blockquote {
   margin-top: 20px;
   max-width: 150px;
   font-size: 18px;
   text-align: center;
   font-style: italic;
 }
-
- footer {
-      gap: 3em;
-      margin-top: 20px;
-  }
-
-  .footer-info-container {
-      flex-direction: column;
-      gap: 2em;
-  }
-
-  .footer-info, .newsletter, .footer-contacts, .social {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-  }
-
-  .social ul {
-      justify-content: center;
-  }
-
-  .newsletter-btn {
-      justify-content: center;
-  }
-
-  footer ul {
-      padding: 0;
-  }
-
-  footer li {
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-  }
