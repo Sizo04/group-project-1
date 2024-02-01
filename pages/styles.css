@@ -26,9 +26,9 @@ p {
   font-size: 18px;
 }
 
-/* NAVBAR */
+/* NAVBAR and FOOTER */
 
-.navbar{
+.navbar, footer{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -38,14 +38,16 @@ p {
 }
 
 .navbar h1{
+  font-size: 20px;
   font-weight: bold;
   color:#F9FAF8;
-
+  display: flex;
+  align-items:center;
 }
 
 .navbar a{
   color:#F9FAF8;
-  font-size:18px;
+  font-size:12px;
   padding-left: 7px;
   text-decoration:none;
 }
