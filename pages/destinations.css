@@ -14,22 +14,24 @@ html {
 
 /* MAIN */
 
-.dest_main img {
+.dest_main{
+  display: flex;
+  align-items: center;
   width: 100vw;
   height: 350px;
   margin-top: 5vh;
-  object-fit: cover;
+  background-size: cover;
+  background-image: url("../images/destinations/others/main.jpg");
+  background-position: center center;
 }
 
 .dest_main p {
-  position: absolute;
-  top: 220px;
-  left: 50px;
   max-width: 700px;
   color: #e5e7eb;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  font-size: 4em;
+  font-size: 4rem;
+  margin-left:15px;
 }
 
 /* MAIN */
@@ -41,11 +43,6 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 50px 20px;
-}
-@media (max-width: 500px) {
-  .main_top_img {
-    justify-content: center;
-  }
 }
 
 .main_top_img img {
@@ -102,7 +99,7 @@ html {
   z-index: 3;
 }
 
-/* AFRICA SECTION */
+/* CONTINENT SECTION */
 
 .gray-bkg {
   background-color: rgb(236, 236, 249);
@@ -187,7 +184,7 @@ html {
 
 .dest_testimonials {
   width: var(--section_width);
-  height: var(--section_height);
+  min-height: var(--section_height);
   background: black;
 }
 
@@ -231,4 +228,30 @@ html {
   font-size: 18px;
   text-align: center;
   font-style: italic;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 500px) {
+  .main_top_img, .dest_img_wrapper{
+    justify-content: center;
+  }
+  .dest_main{
+   height:250px;
+  }
+  .dest_main p{
+    font-size: 2rem;
+  }
+  .call_box{
+    display:block;
+    padding-top:10px;
+    margin-top:25px;
+  }
+  .testi_wrapper{
+    display: block;
+  }
+  
+  .testi_box{
+      margin:12px auto;
+  }
 }
