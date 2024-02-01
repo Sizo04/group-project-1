@@ -1,0 +1,265 @@
+:root {
+  --section_width: 100vw;
+  --section_height: 250px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Black.ttf");
+}
+
+/* MAIN */
+
+.dest_main {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 350px;
+  margin-top: 5vh;
+  background-size: cover;
+  background-image: url("../images/destinations/others/main.jpg");
+  background-position: center center;
+}
+
+.dest_main p {
+  max-width: 700px;
+  color: #e5e7eb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 4rem;
+  margin-left: 15px;
+}
+
+/* MAIN */
+
+/* TOP IMAGES */
+
+.main_top_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px 20px;
+}
+
+.main_top_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 180px;
+  border-radius: 10%;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* DESTINATIONS */
+
+.dest_titles {
+  text-transform: uppercase;
+  margin-left: 5px;
+  padding:15px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+}
+
+.dest_boxes {
+  transform: scale(1);
+  transition: 1s ease-in-out;
+}
+
+.dest_boxes:hover {
+  transform: scale(1.1);
+  letter-spacing: 1px;
+  transition: letter-spacing 0.5s;
+  transition: transform 1s;
+}
+
+.dest_img_wrapper figure:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+}
+
+.dest_boxes a {
+  text-decoration: none;
+}
+
+.main_top_img figure {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.main_top_img figcaption {
+  color: #e5e7eb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  position: relative;
+  z-index: 3;
+}
+
+/* CONTINENT SECTION */
+
+.gray-bkg {
+  background-color: rgb(236, 236, 249);
+}
+
+.dest_img_wrapper {
+  width: var(--section_width);
+  min-height: var(--section_height);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dest_continent figure {
+  width: 200px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* outline: 1px solid black; */
+}
+
+.dest_continent figcaption {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 120px;
+  text-align: center;
+}
+
+.dest_continent img {
+  width: 150px;
+  height: 130px;
+  border-radius: 10%;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* CALL BOX */
+
+.dest_call {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.call_box {
+  width: 70vw;
+  min-height: var(--section_height);
+  background: cornflowerblue;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #e5e7eb;
+  border-radius: 5px;
+}
+
+.call_box h3 {
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+}
+
+.call_box p {
+  font-size: 1.2em;
+  max-width: 250px;
+  line-height: 2em;
+}
+
+.call_box button {
+  align-self: center;
+  padding: 12px 30px 12px 30px;
+  border: 3px #e5e7eb solid;
+  border-radius: 10px;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #e5e7eb;
+}
+
+/* TESTIMONIALS */
+
+.dest_testimonials {
+  width: var(--section_width);
+  min-height: var(--section_height);
+  background: black;
+}
+
+.dest_testimonials h2 {
+  text-align: center;
+  color: #e5e7eb;
+}
+
+.testi_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testi_box {
+  width: 200px;
+  height: 160px;
+  background: rgb(224, 220, 220);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testi_name {
+  color: cornflowerblue;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.testi_dest {
+  color: grey;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.testi_box blockquote {
+  margin-top: 20px;
+  max-width: 150px;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 500px) {
+  .main_top_img,
+  .dest_img_wrapper {
+    justify-content: center;
+  }
+  .dest_main {
+    height: 250px;
+  }
+  .dest_main p {
+    font-size: 2rem;
+  }
+  .call_box {
+    display: block;
+    padding-top: 10px;
+    margin-top: 25px;
+  }
+  .testi_wrapper {
+    display: block;
+  }
+
+  .testi_box {
+    margin: 12px auto;
+  }
+}

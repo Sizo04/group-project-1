@@ -7,9 +7,9 @@
   margin: 0;
 }
 
-/* NAVBAR */
+/* NAVBAR and FOOTER */
 
-.navbar{
+.navbar, footer{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -19,17 +19,22 @@
 }
 
 .navbar h1{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color:#F9FAF8;
-
+  display: flex;
+  align-items:center;
 }
 
 .navbar a{
   color:#F9FAF8;
-  font-size:18px;
+  font-size:12px;
   padding-left: 7px;
   text-decoration:none;
 }
 
-/* NAVBAR */
+footer{
+  color:#F9FAF8;
+  font-size: 12px;
+}
+/* NAVBAR and FOOTER */
