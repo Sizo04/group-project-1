@@ -16,7 +16,7 @@ html{
 
 .dest_main img {
   width: 100vw;
-  height: 300px;
+  height: 350px;
   margin-top: 5vh;
   object-fit: cover;
 }
@@ -40,7 +40,7 @@ html{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 70px 20px;
+  margin: 50px 20px;
 }
 @media (max-width: 500px) {
   .main_top_img {
@@ -231,3 +231,38 @@ html{
   text-align: center;
   font-style: italic;
 }
+
+ footer {
+      gap: 3em;
+      margin-top: 20px;
+  }
+
+  .footer-info-container {
+      flex-direction: column;
+      gap: 2em;
+  }
+
+  .footer-info, .newsletter, .footer-contacts, .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .social ul {
+      justify-content: center;
+  }
+
+  .newsletter-btn {
+      justify-content: center;
+  }
+
+  footer ul {
+      padding: 0;
+  }
+
+  footer li {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+  }
