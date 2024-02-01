@@ -9,6 +9,10 @@
   --quote-text-color: #1f2937;
 }
 
+body {
+  width: 100vw;
+}
+
 figcaption {
   font-size: smaller;
   color: gray;
