@@ -1,26 +1,23 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Black.ttf');
-}
-
-* {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* NAVBAR */
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Black.ttf');
-}
-
-* {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
 /* TEXTS */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Black.ttf');
+}
+
+@font-face{
+    font-family: 'Roboto Italic';
+    src: url('./fonts/Roboto-LightItalic.ttf');
+}
+
+* {
+  margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
 
 h1,
 h2,
@@ -130,141 +127,6 @@ input[type="text"] {
     display: none;
 }
 
-
-/* FOOTER */
-
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #1F2937;
-    color: #F9FAF8;
-    padding: 3em 2em 1em 2em;
-    gap: 3em;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-}
-
-.logo img {
-    width: 50px;
-    height: auto;
-}
-
-.logo-text {
-    font-size: 20px;
-    color: #F9FAF8;
-}
-
-.footer-info-container {
-    display: flex;
-    gap: 5em;
-}
-
-.footer-info {
-    flex: 2;
-    text-align: center;
-}
-
-.newsletter,
-.footer-contacts,
-.social {
-    flex: 1;
-}
-
-.newsletter-btn {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-
-.newsletter-btn button {
-    margin-top: 0;
-}
-
-.social ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1em;
-    padding: 0;
-}
-
-.social li {
-    display: flex;
-    align-items: center;
-    margin: 2px 0;
-    gap: 5px;
-}
-
-.social img {
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-}
-
-.social img:hover {
-    opacity: 0.75;
-}
-
-.footer-contacts ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.copyright {
-    text-align: center;
-    font-size: 10px;
-}
-
-/*  Smartphones  */
-@media (max-width: 768px) {
-
-    /* FOOTER */
-
-    footer {
-        gap: 3em;
-    }
-
-    .footer-info-container {
-        flex-direction: column;
-        gap: 2em;
-    }
-
-    .footer-info,
-    .newsletter,
-    .footer-contacts,
-    .social {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .social ul {
-        justify-content: center;
-    }
-
-    .newsletter-btn {
-        justify-content: center;
-    }
-
-    footer ul {
-        padding: 0;
-    }
-
-    footer li {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-
-/* NAVBAR */
-
 /*HERO */
 
 .hero {
@@ -358,6 +220,7 @@ footer {
 }
 
 .quote {
+    font-family: 'Roboto Italic', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
