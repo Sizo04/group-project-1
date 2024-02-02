@@ -73,6 +73,14 @@ input[type="text"] {
   padding: 7px;
 }
 
+.navbar-logo {
+  width: auto;
+}
+
+nav {
+  display: flex;
+}
+
 .navbar h1 {
   font-size: 20px;
   font-weight: bold;
@@ -133,6 +141,34 @@ button {
   background-color: var(--main_text);
   color: var(--dark);
 }
+
+.back-to-top-btn {
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--cta);
+  cursor: pointer;
+}
+
+.back-to-top-btn:hover {
+  opacity: 0.75;
+}
+
+.back-to-top-btn img {
+  width: 1em;
+  height: auto;
+}
+
+
+
+
+/* HEADER */
 
 header {
   height: 10vh;
@@ -229,8 +265,40 @@ footer {
 /*  Smartphones  */
 @media (max-width: 768px) {
 
+  input[type="text"] {
+    padding: 10px;
+}
+
   .mobile {
     display: block;
+    width: 100%;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .navbar h1 {
+    margin: 0;
+  }
+
+  nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
     width: 100%;
   }
 
@@ -238,6 +306,11 @@ footer {
 
   footer {
       gap: 3em;
+  }
+
+  footer button {
+    font-size: 16px;
+    padding: 0.5em 1em;
   }
   
   .footer-info-container {

@@ -185,18 +185,13 @@ body {
 
 @media only screen and (max-width: 920px) {
 
-    .navbar {
-        justify-content: space-between;
-        padding: 1em;
-    }
-
-    .navbar a {
+    /* .navbar a {
         display: none;
     }
 
     .navbar button {
         display: block;
-    }
+    } */
 
     .hero aside {
         text-align: center;

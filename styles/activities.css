@@ -1,7 +1,4 @@
 
-body {
-  width: 100vw;
-}
 main {
   position: relative;
 }
@@ -41,8 +38,7 @@ figcaption {
   border-radius: 10px;
 }
 
-
-/* .scroll-top {
+.scroll-top {
   position: absolute;
   top: 120vh;
   bottom: 3rem;
@@ -60,17 +56,16 @@ figcaption {
   text-decoration: none;
 }
 
-*/
 .activities-page {
   font-family: "Roboto", sans-serif;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .header-container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 350px;
   background-image: url(../images/activities/header-img.jpg);
   display: flex;
@@ -93,7 +88,7 @@ figcaption {
   color: white;
   font-size: 2.5em;
   text-align: center;
-} 
+}
 
 .image-index-container {
   margin: 0;
@@ -162,10 +157,8 @@ figcaption {
   font-weight: bold;
 }
 
-/*
-
 .activity-section {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 30px 0;
   display: flex;
@@ -276,5 +269,3 @@ figcaption {
     margin: 1em;
   }
 }
- 
-
