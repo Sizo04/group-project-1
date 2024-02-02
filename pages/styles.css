@@ -7,67 +7,88 @@
   --quote_text:#1F2937;
 }
 
-@font-face{
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf');
-}
-
-*{
+* {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
 }
 
-/* TEXTS */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
 
-h1, h2, p {
-  margin: 0.5em 0em 0.5em 0em;
+h1,
+h2,
+p {
+    margin: 0.5em 0em 0.5em 0em;
 }
 
 h1 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 h2 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 p {
-  font-size: 18px;
+    font-size: 18px;
 }
-
-/* NAVBAR and FOOTER */
-
-.navbar, footer{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--dark);
-  padding:7px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
-}
-
-.navbar h1{
-  font-size: 20px;
-  font-weight: bold;
-  color:var(--main_text);
-  display: flex;
-  align-items:center;
-}
-
-.navbar a{
-  color:var(--main_text);
-  font-size:12px;
-  padding-left: 7px;
-  text-decoration:none;
-}
-
-/* ABOUT US PAGE */
 
 /* HR */
 
 hr {
-  width: 2.5em;
-  margin-left: 0;
+    width: 2.5em;
+    margin-left: 0;
+}
+
+/* INPUT */
+
+input[type="text"] {
+    background-color: #F9FAF8;
+    color: #1F2937;
+    border: none;
+    border-radius: 0.5em;
+    padding: 10px;
+}
+
+/* RESPONSIVE CLASSES */
+
+.mobile {
+    display: none;
+}
+
+/* NAVBAR and FOOTER */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1F2937;
+  padding: 7px;
+}
+
+.navbar h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #F9FAF8;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a{
+  color:var(--main_text);
+  font-size: 18px;
+  padding: 0 1em;
+  text-decoration:none;
+}
+
+.navbar a:hover {
+  color: var(--cta);
+}
+
+.navbar img {
+  width: 70px;
+  height: auto;
 }
 
 /* BUTTONS */
@@ -107,23 +128,6 @@ header {
   height: 10vh;
   background-color: var(--dark);
 }
-
-/* INPUT */
-
-input[type="text"] {
-  background-color: var(--main_text);
-  color: var(--dark);
-  border: none;
-  border-radius: 0.5em;
-  padding: 10px;
-}
-
-/* RESPONSIVE */
-
-.mobile {
-  display: none;
-}
-
 
 /* FOOTER */
 
