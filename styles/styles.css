@@ -73,6 +73,14 @@ input[type="text"] {
   padding: 7px;
 }
 
+.navbar-logo {
+  width: auto;
+}
+
+nav {
+  display: flex;
+}
+
 .navbar h1 {
   font-size: 20px;
   font-weight: bold;
@@ -229,8 +237,40 @@ footer {
 /*  Smartphones  */
 @media (max-width: 768px) {
 
+  input[type="text"] {
+    padding: 10px;
+}
+
   .mobile {
     display: block;
+    width: 100%;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .navbar h1 {
+    margin: 0;
+  }
+
+  nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
     width: 100%;
   }
 
@@ -238,6 +278,11 @@ footer {
 
   footer {
       gap: 3em;
+  }
+
+  footer button {
+    font-size: 16px;
+    padding: 0.5em 1em;
   }
   
   .footer-info-container {
