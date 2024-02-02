@@ -7,6 +7,11 @@
   --quote_text:#1F2937;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf');
+}
+
 * {
   margin: 0;
 }
