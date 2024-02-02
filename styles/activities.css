@@ -40,7 +40,7 @@ figcaption {
   border-radius: 10px;
 }
 
-/* .scroll-top {
+.scroll-top {
   position: absolute;
   top: 120vh;
   bottom: 3rem;
@@ -58,7 +58,6 @@ figcaption {
   text-decoration: none;
 }
 
-*/
 .activities-page {
   font-family: "Roboto", sans-serif;
   width: 100vw;
