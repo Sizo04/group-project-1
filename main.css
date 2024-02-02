@@ -13,118 +13,10 @@
 * {
   margin: 0;
 }
-
+  
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-}
-
-h1,
-h2,
-p {
-    margin: 0.5em 0em 0.5em 0em;
-}
-
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-p {
-    font-size: 18px;
-}
-
-/* NAVBAR and FOOTER */
-
-.navbar,
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #1F2937;
-    padding: 7px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-.navbar h1 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #F9FAF8;
-    display: flex;
-    align-items: center;
-}
-
-.navbar a {
-    color: #F9FAF8;
-    font-size: 12px;
-    padding-left: 7px;
-    text-decoration: none;
-}
-
-/* ABOUT US PAGE */
-
-/* HR */
-
-hr {
-    width: 2.5em;
-    margin-left: 0;
-}
-
-/* BUTTONS */
-
-button {
-    font-size: 18px;
-    padding: 0.5em 1.5em;
-    border: none;
-    border-radius: 0.5em;
-    cursor: pointer;
-    margin-top: 1em;
-}
-
-.primary-btn {
-    background-color: #3882F6;
-    color: #E5E7EB;
-}
-
-.primary-btn:hover {
-    transition: color 0.2s ease-in-out;
-    background-color: #1F2937;
-}
-
-.secondary-btn {
-    background-color: transparent;
-    color: #F9FAF8;
-    border: 1.5px #F9FAF8 solid;
-}
-
-.secondary-btn:hover {
-    transition: color 0.2s ease-in-out;
-    background-color: #F9FAF8;
-    color: #1F2937;
-}
-
-header {
-    height: 10vh;
-    background-color: #1F2937;
-}
-
-/* INPUT */
-
-input[type="text"] {
-    background-color: #F9FAF8;
-    color: #1F2937;
-    border: none;
-    border-radius: 0.5em;
-    padding: 10px;
-}
-
-/* RESPONSIVE */
-
-.mobile {
-    display: none;
 }
 
 /*HERO */
@@ -168,14 +60,12 @@ input[type="text"] {
     font-weight: bold;
 }
 
-
-
 .hero figure img {
     max-width: 600px;
     max-height: 270px;
 }
 
-/*HERO */
+/* INFORMATIONS */
 
 .information {
     display: flex;
@@ -219,6 +109,8 @@ input[type="text"] {
     padding: 0.5em 0;
 }
 
+/* QUOTE */
+
 .quote {
     font-family: 'Roboto Italic', sans-serif;
     display: flex;
@@ -243,6 +135,8 @@ input[type="text"] {
     font-size: 36px;
 }
 
+/* SIGNUP */
+
 .signup {
     display: flex;
     justify-content: center;
@@ -261,16 +155,16 @@ input[type="text"] {
 
 }
 
-.signup .container a {
+/* .signup .container a {
     text-decoration: none;
     color: #F9FAF8;
     border: 2px solid #F9FAF8;
     padding: 0.5em 2em;
     border-radius: 5px;
     font-weight: bold;
-}
+} */
 
-
+/* RESPONSIVE */
 
 @media only screen and (max-width: 1030px) {
     .information .images {
