@@ -9,7 +9,7 @@
 
 @font-face{
   font-family: 'Roboto';
-  src: url('./fonts/Roboto-Black.ttf');
+  src: url('../fonts/Roboto-Regular.ttf');
 }
 
 *{
@@ -78,7 +78,7 @@ button {
   border: none;
   border-radius: 0.5em;
   cursor: pointer;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .primary-btn {
@@ -158,13 +158,29 @@ footer {
   gap: 5em;
 }
 
+.footer-info-container h2 {
+  margin-bottom: 1em;
+}
+
+.footer-info-container ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .footer-info {
   flex: 2;
   text-align: center;
 }
 
-.newsletter, .footer-contacts, .social {
+.newsletter, .footer-contacts {
   flex: 1;
+}
+
+.social {
+  flex: 0.5;
 }
 
 .newsletter-btn {
@@ -178,32 +194,17 @@ footer {
 }
 
 .social ul {
-  list-style-type: none;
-  display: flex;
-  gap: 1em;
-  padding: 0;
-}
-
-.social li {
-  display: flex;
-  align-items: center;
-  margin: 2px 0;
-  gap: 5px;
+  flex-direction: row;
 }
 
 .social img {
-  cursor: pointer;
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
-.social img:hover{
+.social img:hover {
   opacity: 0.75;
-}
-
-.footer-contacts ul {
-  padding: 0;
-  list-style-type: none;
 }
 
 .copyright {
@@ -213,6 +214,11 @@ footer {
 
 /*  Smartphones  */
 @media (max-width: 768px) {
+
+  .mobile {
+    display: block;
+    width: 100%;
+  }
 
   /* FOOTER */
 

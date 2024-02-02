@@ -1,9 +1,23 @@
 
+/* Common Components */
+
+p {
+   line-height: 25px;
+}
+
+.about-us-info-textbox {
+   width: 30vw;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+
 /* ABOUT US HERO */
 
 .about-us-hero {
     height: 50vh;
     background-color: #1F2937;
+    color: #F9FAF8; 
     display: flex;
     padding: 0 2em 0 2em;
   }
@@ -23,16 +37,6 @@
 .hero-image {
    width: 40vh;
    height: auto;
-}
-  
-  
-/* TODO: create a common text-box for about-us and team sections */
-.about-us-text{
-   width: 30vw;
-   display: flex;
-   flex-direction: column;
-   align-items: start;
-   color: #F9FAF8;  
 }
   
  /* ABOUT US MISSION & VALUES SECTION */
@@ -72,7 +76,7 @@
 .about-us-imagebox {
    position: relative;
    height: 40vh;
-   background-image: url("../images/about-us/landscape.jpg");
+   background-image: url("../images/about-us/landscape2.jpg");
    background-size: cover;
    background-repeat: repeat-x;  
    background-position: center center;
@@ -91,14 +95,13 @@
   
 .about-us-imagebox-text {
    margin: 4em;
-   width: 30vw;
+   width: 40vw;
    color: #F9FAF8;
 }
   
 /* TEAM SECTION */
   
 .about-us-team {
-    /* height: 40vh; */
    background-color: #E5E7EB;
    display: flex;
    justify-content: space-around;
@@ -115,14 +118,7 @@
    align-items: center;
 }
   
-.about-us-team-info {
-   width: 30vw;
-   display: flex;
-   flex-direction: column;
-   align-items: start;
-}
-  
-.about-us-team-info hr {
+.about-us-team-info-container hr {
    color: #1F2937;
 }
   
@@ -133,7 +129,6 @@
 }
   
 .team-member {
-   /* flex: 1; */
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -143,7 +138,6 @@
 .member {
    width: 13vw;
    height: 13vw;
-   background-color: #1F2937;
 }
   
 .team-member  h2 {
@@ -155,7 +149,7 @@
    margin: 0;
 }
   
-/* SERVICES */
+/* SERVICES SECTION */
   
 .about-us-services {
    display: flex;
@@ -188,16 +182,19 @@
 /*  Smartphones  */
 @media (max-width: 768px) {
 
+   /* Common Components */
+
+   .about-us-info-textbox {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+  }
+
     hr {
        display: none;
     }
   
-    .mobile {
-        display: block;
-        width: 100%;
-    }
-  
-    /* Hero Section */
+    /* HERO SECTION */
     
     .about-us-hero {
       height: 75vh;
@@ -209,13 +206,7 @@
       width: 100%;
     }
   
-    .about-us-text {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-  
-    /* Mission & Values Section */
+    /* MISSION & VALUES SECTION */
   
     .about-us-values {
         flex-direction: column;
@@ -226,7 +217,7 @@
         width: 100%;
     }
   
-    /* ImageBox Section */
+    /* IMAGEBOX SECTION */
   
     .about-us-imagebox-text {
         width: 100%;
@@ -237,7 +228,7 @@
         margin: 2em 1em;
     }
   
-    /* Team Section */
+    /* TEAM SECTION */
   
     .about-us-team {
         flex-direction: column;
@@ -246,12 +237,6 @@
   
     .about-us-team-info-container {
         width: 100%;
-    }
-  
-    .about-us-team-info {
-        width: 100%;
-        align-items: center;
-        text-align: center;
     }
   
     .about-us-team {
@@ -271,11 +256,7 @@
         height: 10em;
     } 
   
-    /* .about-us-team-info {
-        width: auto;
-    }*/
-  
-    /* SERVICES */
+    /* SERVICES SECTION */
   
     .about-us-services-container {
         flex-wrap: wrap;
