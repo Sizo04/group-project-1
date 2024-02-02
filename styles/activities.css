@@ -1,6 +1,5 @@
 body {
   width: 100vw;
-  margin: 0;
 }
 main {
   position: relative;
@@ -19,14 +18,14 @@ figcaption {
   position: -webkit-sticky;
   position: sticky;
   top: 90vh;
-  background-color: #1f2937;
-  color: #f9faf8;
+  background-color: var(--dark);
+  color: var(--main_text);
   padding: 5px;
   border-radius: 5px;
   text-decoration: none;
 }
 .activities-page {
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -35,13 +34,13 @@ figcaption {
   width: 100vw;
   height: 200px;
   margin: 0;
-  background-color: #1f2937;
+  background-color: var(--dark);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header-container h1 {
-  color: white;
+  color: var(--main_text);
   font-size: 2.5em;
   font-weight: bold;
   text-align: center;
@@ -56,7 +55,7 @@ figcaption {
   padding: 30px 0;
 }
 .image-index-container .img-menu {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 10%;
   box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
@@ -95,34 +94,33 @@ figcaption {
 .activity-section {
   width: 100vw;
   margin: 0;
-  padding: 20px 0;
+  padding: 30px 0;
   display: flex;
   flex-flow: row;
 }
 .activity-gray-bg {
-  background-color: #e5e7eb;
+  background-color: var(--quote_bkg);
 }
 
 .intro-container {
-  width: 25%;
-  padding-left: 10px;
+  flex: 1;
+  padding: 0 25px 0 25px;
 }
 .intro-container p {
-  width: 100%;
   text-align: justify;
 }
 .ins-container {
-  width: 75%;
+  flex: 5;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  row-gap: 15px;
+  row-gap: 12px;
 }
 .ins-container .activity-card {
   width: 20vw;
 }
 .activity-card .act-img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
 }
 .activity-card p {
@@ -135,7 +133,7 @@ figcaption {
 .activity-links-footer a {
   margin: 0 5px;
   font-size: 1em;
-  color: #f9faf8;
+  color: var(--main_text);
   text-decoration: none;
 }
 .activity-links-footer a:hover {
@@ -170,9 +168,12 @@ figcaption {
   .ins-container {
     flex-direction: column;
   }
+  .intro-container {
+    padding-left: 0;
+  }
   .intro-container,
   .ins-container {
-    width: 90vw;
+    width: 80vw;
   }
   .ins-container .activity-card {
     width: 100%;
