@@ -37,6 +37,7 @@ h2 {
 
 p {
     font-size: 18px;
+    line-height: 1.5em;
 }
 
 /* HR */
@@ -49,8 +50,8 @@ hr {
 /* INPUT */
 
 input[type="text"] {
-    background-color: #F9FAF8;
-    color: #1F2937;
+    background-color: var(--main_text);
+    color: var(--quote_text);
     border: none;
     border-radius: 0.5em;
     padding: 10px;
@@ -68,14 +69,14 @@ input[type="text"] {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #1F2937;
+  background-color: var(--quote_text);
   padding: 7px;
 }
 
 .navbar h1 {
   font-size: 20px;
   font-weight: bold;
-  color: #F9FAF8;
+  color: var(--main_text);
   display: flex;
   align-items: center;
 }
@@ -88,6 +89,10 @@ input[type="text"] {
 }
 
 .navbar a:hover {
+  color: var(--cta);
+}
+
+.navbar .active {
   color: var(--cta);
 }
 

@@ -36,19 +36,42 @@ html {
 .main_top_img {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 50px 20px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 25px;
+  gap: 40px;
 }
 
 .main_top_img img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
-  height: 180px;
-  border-radius: 10%;
+  width: 180px;
+  height: 160px;
+  border-radius: 10px;
   box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
   z-index: 2;
+}
+
+.main_top_img figure {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.main_top_img figcaption {
+  color: var(--main_text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+  z-index: 3;
 }
 
 /* DESTINATIONS */
@@ -82,38 +105,22 @@ html {
   text-decoration: none;
 }
 
-.main_top_img figure {
-  width: 200px;
-  height: 180px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-}
-
-.main_top_img figcaption {
-  color: var(--main_text);
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-  position: relative;
-  z-index: 3;
-}
-
-/* CONTINENT SECTION */
-
 .gray-bkg {
   background-color: var(--quote_bkg);
 }
 
+.gray-bkg .dest_titles {
+  padding-top: 20px;
+}
+
 .dest_img_wrapper {
   width: var(--section_width);
-  min-height: var(--section_height);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  padding-bottom: 25px;
+  gap: 60px;
 }
 
 .dest_img_wrapper figure {
@@ -125,6 +132,7 @@ html {
   width: 200px;
   height: 180px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
@@ -147,6 +155,7 @@ html {
 
 .dest_call {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -198,11 +207,12 @@ html {
   min-height: var(--section_height);
   background: var(--dark);
   margin-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .dest_testimonials h2 {
   text-align: center;
-  color: var(--main);
+  color: var(--main_text);
   padding-top: 10px;
 }
 
@@ -261,6 +271,8 @@ html {
     display: block;
     padding-top: 10px;
     margin-top: 25px;
+    padding: 40px;
+    text-align: center;
   }
   .testi_wrapper {
     display: block;
@@ -269,4 +281,21 @@ html {
   .testi_box {
     margin: 12px auto;
   }
+}
+.scroll-top {
+  position: absolute;
+  top: 120vh;
+  bottom: 3rem;
+  right: 2rem;
+}
+.scroll-top__link {
+  position: -webkit-fixed;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
 }
