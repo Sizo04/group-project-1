@@ -73,7 +73,7 @@ html {
   transition: transform 1s;
 }
 
-.dest_img_wrapper figure:hover, .call_box button:hover {
+.dest_img_wrapper figure:hover {
   transform: scale(1.1);
   transition: transform 1s;
 }
@@ -185,8 +185,11 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: #e5e7eb;
-  transform: scale(1);
-  transition: 1s ease-in-out;
+}
+
+.call_box button:hover{
+  background-color: #e5e7eb;
+  color:cornflowerblue;
 }
 
 /* TESTIMONIALS */
