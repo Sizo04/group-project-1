@@ -39,7 +39,7 @@ html {
   justify-content: center;
   margin: 0 auto;
   padding-top: 25px;
-  gap:40px;
+  gap: 40px;
 }
 
 .main_top_img img {
@@ -69,8 +69,8 @@ html {
   font-weight: bold;
   font-size: 2em;
   position: relative;
-  right:10px;
-  bottom:10px;
+  right: 10px;
+  bottom: 10px;
   z-index: 3;
 }
 
@@ -273,6 +273,8 @@ html {
     display: block;
     padding-top: 10px;
     margin-top: 25px;
+    padding: 40px;
+    text-align: center;
   }
   .testi_wrapper {
     display: block;
@@ -281,4 +283,21 @@ html {
   .testi_box {
     margin: 12px auto;
   }
+}
+.scroll-top {
+  position: absolute;
+  top: 120vh;
+  bottom: 3rem;
+  right: 2rem;
+}
+.scroll-top__link {
+  position: -webkit-fixed;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
 }

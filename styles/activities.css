@@ -1,8 +1,5 @@
-
-
-
- body {
-  margin: 0;
+body {
+  width: 100vw;
 }
 main {
   position: relative;
@@ -43,8 +40,7 @@ figcaption {
   border-radius: 10px;
 }
 
-
-/* .scroll-top {
+.scroll-top {
   position: absolute;
   top: 120vh;
   bottom: 3rem;
@@ -55,37 +51,46 @@ figcaption {
   position: -webkit-sticky;
   position: sticky;
   top: 90vh;
-  background-color: #1f2937;
-  color: #f9faf8;
+  background-color: var(--dark);
+  color: var(--main_text);
   padding: 5px;
   border-radius: 5px;
   text-decoration: none;
 }
 
-*/
 .activities-page {
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-  width: 100%;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
 
 .header-container {
-  width: 100%;
-  height: 200px;
-  margin: 0;
-  background-color: #1f2937;
+  position: relative;
+  width: 100vw;
+  height: 350px;
+  background-image: url(../images/activities/header-img.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+}
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .header-container h1 {
+  position: relative;
   color: white;
   font-size: 2.5em;
-  font-weight: bold;
   text-align: center;
-} 
+}
 
 .image-index-container {
   margin: 0;
@@ -96,7 +101,7 @@ figcaption {
   padding: 30px 0;
 }
 .image-index-container .img-menu {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 10%;
   box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
@@ -154,43 +159,72 @@ figcaption {
   font-weight: bold;
 }
 
-/*
-
 .activity-section {
   width: 100vw;
   margin: 0;
-  padding: 20px 0;
+  padding: 30px 0;
   display: flex;
   flex-flow: row;
 }
-
-
+.activity-gray-bg {
+  background-color: var(--quote_bkg);
+}
 .intro-container {
-  width: 25%;
-  padding-left: 10px;
+  flex: 1;
+  padding: 0 25px 0 25px;
 }
 .intro-container p {
-  width: 100%;
   text-align: justify;
 }
 .ins-container {
-  width: 75%;
+  flex: 5;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  row-gap: 15px;
+  row-gap: 12px;
 }
 .ins-container .activity-card {
-  width: 20vw;
+  width: 18vw;
 }
 .activity-card .act-img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
 }
-
-
-*/
-
+.activity-card p {
+  width: 100%;
+  text-align: justify;
+}
+.activity-links-footer {
+  text-align: center;
+}
+.activity-links-footer a {
+  margin: 0 5px;
+  font-size: 1em;
+  color: var(--main_text);
+  text-decoration: none;
+}
+.activity-links-footer a:hover {
+  font-weight: bold;
+}
+.signup {
+  display: flex;
+  justify-content: center;
+}
+.signup .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3882f6;
+  width: 800px;
+  padding: 2em 4em;
+  color: #f9faf8;
+  margin: 5em 0;
+  border-radius: 10px;
+}
+.signup .container .text {
+  flex: 2;
+  padding: 1em;
+}
 @media screen and (max-width: 600px) {
   .header-container {
     height: 150px;
@@ -219,11 +253,21 @@ figcaption {
   .ins-container {
     flex-direction: column;
   }
+  .intro-container {
+    padding-left: 0;
+  }
   .intro-container,
   .ins-container {
-    width: 90vw;
+    width: 80vw;
   }
   .ins-container .activity-card {
     width: 100%;
   }
-} 
+  .signup .container {
+    flex-direction: column;
+  }
+
+  .signup .container .button {
+    margin: 1em;
+  }
+}
