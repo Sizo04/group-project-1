@@ -7,11 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("./fonts/Roboto-Black.ttf");
-}
-
 /* MAIN */
 
 .dest_main {
@@ -78,7 +73,7 @@ html {
   transition: transform 1s;
 }
 
-.dest_img_wrapper figure:hover {
+.dest_img_wrapper figure:hover, .call_box button:hover {
   transform: scale(1.1);
   transition: transform 1s;
 }
@@ -119,6 +114,11 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.dest_img_wrapper figure{
+  transform: scale(1);
+  transition: 1s ease-in-out;
 }
 
 .dest_continent figure {
@@ -185,6 +185,8 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: #e5e7eb;
+  transform: scale(1);
+  transition: 1s ease-in-out;
 }
 
 /* TESTIMONIALS */
