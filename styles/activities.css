@@ -117,7 +117,7 @@ figcaption {
   row-gap: 12px;
 }
 .ins-container .activity-card {
-  width: 20vw;
+  width: 18vw;
 }
 .activity-card .act-img {
   max-width: 100%;
@@ -138,6 +138,26 @@ figcaption {
 }
 .activity-links-footer a:hover {
   font-weight: bold;
+}
+.signup {
+  display: flex;
+  justify-content: center;
+}
+
+.signup .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3882f6;
+  width: 800px;
+  padding: 2em 4em;
+  color: #f9faf8;
+  margin: 5em 0;
+  border-radius: 10px;
+}
+.signup .container .text {
+  flex: 2;
+  padding: 1em;
 }
 
 @media screen and (max-width: 600px) {
@@ -177,5 +197,12 @@ figcaption {
   }
   .ins-container .activity-card {
     width: 100%;
+  }
+  .signup .container {
+    flex-direction: column;
+  }
+
+  .signup .container .button {
+    margin: 1em;
   }
 }
