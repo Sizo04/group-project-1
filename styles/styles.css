@@ -37,6 +37,7 @@ h2 {
 
 p {
     font-size: 18px;
+    line-height: 1.5em;
 }
 
 /* HR */
@@ -88,6 +89,10 @@ input[type="text"] {
 }
 
 .navbar a:hover {
+  color: var(--cta);
+}
+
+.navbar .active {
   color: var(--cta);
 }
 
