@@ -1,20 +1,56 @@
-body {
-  width: 100vw;
+
+
+
+ body {
   margin: 0;
 }
 main {
   position: relative;
 }
+
 figcaption {
   font-size: smaller;
   color: gray;
 }
-.scroll-top {
+
+.activity-section {
+  display: flex;
+  align-items: start;
+  padding: 20px 0;
+}
+
+.intro-container {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.ins-container {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+.activity-card {
+  width: 20em;
+}
+
+.activity-card .act-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+/* .scroll-top {
   position: absolute;
   top: 120vh;
   bottom: 3rem;
   right: 2rem;
 }
+
 .scroll-top__link {
   position: -webkit-sticky;
   position: sticky;
@@ -25,14 +61,17 @@ figcaption {
   border-radius: 5px;
   text-decoration: none;
 }
+
+*/
 .activities-page {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
+
 .header-container {
-  width: 100vw;
+  width: 100%;
   height: 200px;
   margin: 0;
   background-color: #1f2937;
@@ -40,12 +79,13 @@ figcaption {
   justify-content: center;
   align-items: center;
 }
+
 .header-container h1 {
   color: white;
   font-size: 2.5em;
   font-weight: bold;
   text-align: center;
-}
+} 
 
 .image-index-container {
   margin: 0;
@@ -72,6 +112,7 @@ figcaption {
   transform: scale(1);
   transition: 1s ease-in-out;
 }
+
 .img-menu-boxes:hover {
   transform: scale(1.1);
   letter-spacing: 1px;
@@ -92,6 +133,29 @@ figcaption {
   text-decoration: none;
 }
 
+.activity-gray-bg {
+  background-color: #e5e7eb;
+}
+
+.activity-card p {
+  width: 100%;
+  text-align: justify;
+}
+.activity-links-footer {
+  text-align: center;
+}
+.activity-links-footer a {
+  margin: 0 5px;
+  font-size: 1em;
+  color: #f9faf8;
+  text-decoration: none;
+}
+.activity-links-footer a:hover {
+  font-weight: bold;
+}
+
+/*
+
 .activity-section {
   width: 100vw;
   margin: 0;
@@ -99,9 +163,7 @@ figcaption {
   display: flex;
   flex-flow: row;
 }
-.activity-gray-bg {
-  background-color: #e5e7eb;
-}
+
 
 .intro-container {
   width: 25%;
@@ -125,22 +187,9 @@ figcaption {
   width: 100%;
   border-radius: 10px;
 }
-.activity-card p {
-  width: 100%;
-  text-align: justify;
-}
-.activity-links-footer {
-  text-align: center;
-}
-.activity-links-footer a {
-  margin: 0 5px;
-  font-size: 1em;
-  color: #f9faf8;
-  text-decoration: none;
-}
-.activity-links-footer a:hover {
-  font-weight: bold;
-}
+
+
+*/
 
 @media screen and (max-width: 600px) {
   .header-container {
@@ -177,4 +226,4 @@ figcaption {
   .ins-container .activity-card {
     width: 100%;
   }
-}
+} 
