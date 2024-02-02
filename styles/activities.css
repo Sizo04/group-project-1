@@ -1,4 +1,3 @@
-
 body {
   width: 100vw;
 }
@@ -40,7 +39,6 @@ figcaption {
   width: 100%;
   border-radius: 10px;
 }
-
 
 /* .scroll-top {
   position: absolute;
@@ -93,7 +91,7 @@ figcaption {
   color: white;
   font-size: 2.5em;
   text-align: center;
-} 
+}
 
 .image-index-container {
   margin: 0;
@@ -161,8 +159,6 @@ figcaption {
 .activity-links-footer a:hover {
   font-weight: bold;
 }
-
-/*
 
 .activity-section {
   width: 100vw;
@@ -276,5 +272,3 @@ figcaption {
     margin: 1em;
   }
 }
- 
-
