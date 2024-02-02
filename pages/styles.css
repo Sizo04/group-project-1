@@ -1,3 +1,12 @@
+:root{
+  --dark:#1F2937;
+  --main_text:#F9FAF8;
+  --secondary_text:#E5E7EB;
+  --cta:#3882F6;
+  --quote_bkg:#E5E7EB;
+  --quote_text:#1F2937;
+}
+
 @font-face{
   font-family: 'Roboto';
   src: url('./fonts/Roboto-Black.ttf');
@@ -32,7 +41,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: black;
+  background-color: var(--dark);
   padding:7px;
   font-family:Verdana, Geneva, Tahoma, sans-serif
 }
@@ -40,13 +49,13 @@ p {
 .navbar h1{
   font-size: 20px;
   font-weight: bold;
-  color:#F9FAF8;
+  color:var(--main_text);
   display: flex;
   align-items:center;
 }
 
 .navbar a{
-  color:#F9FAF8;
+  color:var(--main_text);
   font-size:12px;
   padding-left: 7px;
   text-decoration:none;
@@ -73,37 +82,37 @@ button {
 }
 
 .primary-btn {
-  background-color: #3882F6;
-  color: #E5E7EB;
+  background-color: var(--cta);
+  color: var(--main_text);
 }
 
 .primary-btn:hover {
   transition: color 0.2s ease-in-out;
-  background-color: #1F2937;
+  background-color:  var(--quote_text);
 }
 
 .secondary-btn {
   background-color: transparent;
-  color: #F9FAF8;
-  border: 1.5px #F9FAF8 solid;
+  color: var(--main_text);
+  border: 1.5px var(--main_text) solid;
 }
 
 .secondary-btn:hover {
   transition: color 0.2s ease-in-out;
-  background-color: #F9FAF8;
-  color: #1F2937;
+  background-color: var(--main_text);
+  color: var(--dark);
 }
 
 header {
   height: 10vh;
-  background-color: #1F2937;
+  background-color: var(--dark);
 }
 
 /* INPUT */
 
 input[type="text"] {
-  background-color: #F9FAF8;
-  color: #1F2937;
+  background-color: var(--main_text);
+  color: var(--dark);
   border: none;
   border-radius: 0.5em;
   padding: 10px;
@@ -121,8 +130,8 @@ input[type="text"] {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #1F2937;
-  color: #F9FAF8;
+  background-color: var(--dark);
+  color: var(--main);
   padding: 3em 2em 1em 2em;
   gap: 3em;
 }
@@ -141,7 +150,7 @@ footer {
 
 .logo-text {
   font-size: 20px;
-  color: #F9FAF8;
+  color: var(--main_text);
 }
 
 .footer-info-container {
