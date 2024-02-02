@@ -131,7 +131,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: var(--dark);
-  color: var(--main);
+  color: var(--main_text);
   padding: 3em 2em 1em 2em;
   gap: 3em;
 }
