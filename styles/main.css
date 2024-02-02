@@ -5,15 +5,15 @@
     src: url('../fonts/Roboto-Regular.ttf');
 }
 
-@font-face{
+@font-face {
     font-family: 'Roboto Italic';
     src: url('../fonts/Roboto-LightItalic.ttf');
 }
 
 * {
-  margin: 0;
+    margin: 0;
 }
-  
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -101,7 +101,6 @@ body {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border: 5px solid #3882F6;
     border-radius: 20px;
 }
 
