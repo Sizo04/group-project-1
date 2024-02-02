@@ -1,0 +1,144 @@
+body {
+  width: 100vw;
+}
+main {
+  position: relative;
+}
+figcaption {
+  font-size: smaller;
+  color: gray;
+}
+.scroll-top {
+  position: absolute;
+  top: 120vh;
+  bottom: 3rem;
+  right: 2rem;
+}
+.scroll-top__link {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90vh;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.activities-page {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.header-container {
+  width: 100vw;
+  height: 200px;
+  margin: 0;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.image-index-container {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px 0;
+}
+.image-index-container .img-menu {
+  height: auto;
+  width: 12vw;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+  margin: 0 1.5vw;
+  filter: brightness(50%);
+}
+.image-index-container .img-menu:hover {
+  filter: brightness(100%);
+}
+
+.activity-section {
+  width: 100vw;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row;
+}
+.activity-gray-bg {
+  background-color: #e5e7eb;
+}
+
+.intro-container {
+  width: 25%;
+  padding-left: 10px;
+}
+.intro-container p {
+  width: 100%;
+  text-align: justify;
+}
+.ins-container {
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  row-gap: 15px;
+}
+.ins-container .activity-card {
+  width: 20vw;
+}
+.activity-card .act-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.activity-card p {
+  width: 100%;
+  text-align: justify;
+}
+.activity-links-footer {
+  text-align: center;
+}
+.activity-links-footer a {
+  margin: 0 5px;
+  font-size: 1em;
+  color: #f9faf8;
+  text-decoration: none;
+}
+.activity-links-footer a:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    height: 150px;
+  }
+  .header-container h1 {
+    font-size: 1.2em;
+  }
+  .image-index-container .img-menu {
+    filter: brightness(100%);
+    border: 1px solid #3882f6;
+  }
+  .activity-section {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+  .ins-container {
+    flex-direction: column;
+  }
+  .intro-container,
+  .ins-container {
+    width: 90vw;
+  }
+  .ins-container .activity-card {
+    width: 100%;
+  }
+}
