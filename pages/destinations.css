@@ -22,7 +22,7 @@ html {
 
 .dest_main p {
   max-width: 700px;
-  color: #e5e7eb;
+  color: var(--main_text);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 4rem;
@@ -56,8 +56,8 @@ html {
 .dest_titles {
   text-transform: uppercase;
   margin-left: 5px;
-  padding:15px;
-  font-family: 'Roboto',sans-serif;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
@@ -93,7 +93,7 @@ html {
 }
 
 .main_top_img figcaption {
-  color: #e5e7eb;
+  color: var(--main_text);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 2em;
@@ -104,7 +104,7 @@ html {
 /* CONTINENT SECTION */
 
 .gray-bkg {
-  background-color: rgb(236, 236, 249);
+  background-color: var(--quote_bkg);
 }
 
 .dest_img_wrapper {
@@ -116,7 +116,7 @@ html {
   align-items: center;
 }
 
-.dest_img_wrapper figure{
+.dest_img_wrapper figure {
   transform: scale(1);
   transition: 1s ease-in-out;
 }
@@ -127,7 +127,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* outline: 1px solid black; */
 }
 
 .dest_continent figcaption {
@@ -155,12 +154,12 @@ html {
 .call_box {
   width: 70vw;
   min-height: var(--section_height);
-  background: cornflowerblue;
+  background: var(--cta);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: #e5e7eb;
+  color: var(--main_text);
   border-radius: 5px;
 }
 
@@ -179,7 +178,7 @@ html {
 .call_box button {
   align-self: center;
   padding: 12px 30px 12px 30px;
-  border: 3px #e5e7eb solid;
+  border: 3px var(--main_text) solid;
   border-radius: 10px;
   background: transparent;
   font-family: "Roboto", sans-serif;
@@ -187,9 +186,9 @@ html {
   color: #e5e7eb;
 }
 
-.call_box button:hover{
-  background-color: #e5e7eb;
-  color:cornflowerblue;
+.call_box button:hover {
+  background-color: var(--main_text);
+  color: cornflowerblue;
 }
 
 /* TESTIMONIALS */
@@ -197,13 +196,13 @@ html {
 .dest_testimonials {
   width: var(--section_width);
   min-height: var(--section_height);
-  background: black;
+  background: var(--dark);
   margin-bottom: 40px;
 }
 
 .dest_testimonials h2 {
   text-align: center;
-  color: #e5e7eb;
+  color: var(--main);
   padding-top: 10px;
 }
 
@@ -215,23 +214,24 @@ html {
 .testi_box {
   width: 200px;
   height: 160px;
-  background: rgb(224, 220, 220);
+  background: var(--quote_bkg);
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  padding-bottom: 12px;
 }
 
 .testi_name {
-  color: cornflowerblue;
+  color: var(--cta);
   font-weight: bold;
   margin-bottom: 2px;
 }
 
 .testi_dest {
-  color: grey;
+  color: rgb(164, 150, 150);
   font-style: italic;
   margin-bottom: 2px;
 }
