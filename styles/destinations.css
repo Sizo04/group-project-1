@@ -3,10 +3,6 @@
   --section_height: 250px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* MAIN */
 
 .dest_main {
@@ -182,22 +178,6 @@ html {
   font-size: 1.2em;
   max-width: 250px;
   line-height: 2em;
-}
-
-.call_box button {
-  align-self: center;
-  padding: 12px 30px 12px 30px;
-  border: 3px var(--main_text) solid;
-  border-radius: 10px;
-  background: transparent;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  color: #e5e7eb;
-}
-
-.call_box button:hover {
-  background-color: var(--main_text);
-  color: cornflowerblue;
 }
 
 /* TESTIMONIALS */

@@ -19,7 +19,7 @@ p {
     background-color: #1F2937;
     color: #F9FAF8; 
     display: flex;
-    padding: 0 2em 0 2em;
+    padding: 1em 2em 1em 2em;
   }
   
 .about-us-image-container, .about-us-text-container{
@@ -94,7 +94,7 @@ p {
 }
   
 .about-us-imagebox-text {
-   margin: 4em;
+   padding: 5vw;
    width: 40vw;
    color: #F9FAF8;
 }
@@ -198,23 +198,26 @@ p {
    border-radius: 5px;
    padding: 2em;
  }
+
+ .call_box-text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+ }
  
  .call_box h3 {
-   margin-bottom: 40px;
    font-family: "Roboto", sans-serif;
    font-size: 1.5em;
  }
  
  .call_box p {
    font-size: 1.2em;
-   max-width: 250px;
-   line-height: 2em;
+   max-width: 60vw;
  }
   
 /*  Smartphones  */
 @media (max-width: 768px) {
-
-   /* Common Components */
 
    .about-us-info-textbox {
       width: 100%;
@@ -259,6 +262,11 @@ p {
         text-align: center;
         margin: 2em 1em;
     }
+
+    .about-us-imagebox-hoverlay, .about-us-imagebox {
+      min-height: 50vh;
+      height: auto;
+    }
   
     /* TEAM SECTION */
   
@@ -302,5 +310,18 @@ p {
     .call_box {
       justify-content: center;
       flex-direction: column;
+    }
+}
+
+/* VERY SMALL SCREENS */
+@media (max-width: 350px) {
+
+   .about-us-hero {
+      height: 100vh;
+   }
+
+   .about-us-imagebox-hoverlay, .about-us-imagebox {
+      min-height: 75vh;
+      height: auto;
     }
 }

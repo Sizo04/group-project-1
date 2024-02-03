@@ -16,6 +16,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -120,6 +124,16 @@ button {
   margin-top: 0.5em;
 }
 
+.btn {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
 .primary-btn {
   background-color: var(--cta);
   color: var(--main_text);
@@ -127,7 +141,7 @@ button {
 
 .primary-btn:hover {
   transition: color 0.2s ease-in-out;
-  background-color:  var(--quote_text);
+  opacity: 0.75;
 }
 
 .secondary-btn {
@@ -164,9 +178,6 @@ button {
   width: 1em;
   height: auto;
 }
-
-
-
 
 /* HEADER */
 
@@ -243,6 +254,11 @@ footer {
   margin-top: 0;
 }
 
+.newsletter-btn button:hover {
+  background-color: var(--cta);
+  opacity: 0.75;
+}
+
 .social ul {
   flex-direction: row;
 }
@@ -298,7 +314,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5vh;
+    height: 6vh;
     width: 100%;
   }
 
@@ -341,5 +357,12 @@ footer {
       list-style-type: none;
       display: flex;
       justify-content: center;
+  }
+}
+
+/* VERY SMALL SCREENS */
+@media (max-width: 350px) {
+  nav .links {
+    height: 8vh;
   }
 }
