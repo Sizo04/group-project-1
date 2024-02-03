@@ -369,8 +369,7 @@ footer {
 
 @media only screen and (max-width: 1090px) {
 
-  .newsletter,
-  .footer-contacts {
+  .newsletter .footer-contacts {
     display: none;
   }
 }
