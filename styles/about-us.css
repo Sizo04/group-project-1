@@ -262,8 +262,7 @@ p {
     }
 
     .about-us-imagebox-hoverlay, .about-us-imagebox {
-      min-height: 50vh;
-      height: auto;
+      height: 50vh;
     }
   
     /* TEAM SECTION */
