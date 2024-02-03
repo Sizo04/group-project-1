@@ -366,3 +366,11 @@ footer {
     height: 8vh;
   }
 }
+
+@media only screen and (max-width: 1090px) {
+
+  .newsletter,
+  .footer-contacts {
+    display: none;
+  }
+}
